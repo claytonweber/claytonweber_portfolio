@@ -1,8 +1,13 @@
+* {
+    color: rgb(50, 50, 44);
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    background-color: rgb(238, 229, 233);
     font-family: sans-serif;
+
 }
 
 header {
@@ -13,14 +18,14 @@ header {
 
 nav {
     display: flex;
-    background-color: cyan;
-    border: 2px dotted black;
+    background-color: rgb(67, 187, 239);
+    /* border: 2px dotted black; */
     justify-content: space-between;
 }
 
 .name {
     justify-content: start;
-    border: 2px dotted black;
+    /* border: 2px dotted black; */
     align-self: center; 
     font-size: 1.75em;
     padding-left: 20px;
@@ -31,7 +36,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border: 2px dotted black;
+    /* border: 2px dotted black; */
     text-decoration: none;
     
 }
@@ -43,6 +48,10 @@ nav {
     font-size: 1.5em;
     text-decoration: none;
     /* justify-items: end; */
+}
+
+.nav-link:visited {
+    color: rgb(76, 96, 133);
 }
 
 .nav-link:hover {
@@ -61,27 +70,55 @@ main {
 
 .about-me-sections {
     align-self: center;
-    border: 2px dotted black;
+    /* border: 2px dotted black; */
 }
 
 .portfolio-page {
     display: flex;
-    background-color: pink;
+    background-color: rbg(76, 96, 133);
     align-items: center;
 }
 
 .portfolio-container {
     display: flex;
     flex-direction: column;
-    border: 2px dotted black;
+    /* border: 2px dotted black; */
     width: 70%;
 }
 
 .project-section {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 2px dotted red; */
     justify-content: space-between;
+    /* align-items: center; */
+    background-color: rgb(76, 96, 133);
+    padding: 1em 1em 2em 1em;
+    margin: 1em;    
 }
 
-.p-description {
-    flex-direction: row;
+.project-section h2 {
+    /* border: 1px solid black; */
+    width: 80%;
+    flex-grow: 10;
+    color: rgb(238, 229, 233);
+
+}
+
+.project-section p {
+    /* align-self: flex-start; */
+    /* border: 1px dotted blue; */
+    color: rgb(238, 229, 233);
+    width: 60%;
+    font-size: 1.1em;
+    
+}
+
+.project-section img {
+    /* display: flex; */
+    /* align-self: flex-end; */
+    /* justify-content: flex-end; */
+    align-items: center;
+    align-self: flex-end;
 }
